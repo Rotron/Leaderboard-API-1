@@ -1,5 +1,4 @@
 <?php
-// TODO: Get Requests
 
 // Allow third parties to use
 header('Access-Control-Allow-Origin: *');
@@ -10,7 +9,7 @@ $connection = connect_to_database();
 
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     
-    if( true || validate_key($_POST['key'], $connection) ){  // Posts require API Key Validation
+    if( validate_key($_POST['key'], $connection) ){  // Posts require API Key Validation
         post_request($connection);
     }else{
         handle_unauthorized_user();
