@@ -1,0 +1,21 @@
+INSERT INTO scores (
+	PLAYER,
+	LEVEL,
+	SCORE,
+	DATE
+) VALUES (
+	"random",
+	"Level2",
+	2.432,
+	NOW()
+);
+
+
+
+INSERT INTO api (
+    api_key,
+    game
+) VALUES (
+	"1PIEjxnWXe",
+	"Box Shooter"
+);
