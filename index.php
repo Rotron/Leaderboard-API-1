@@ -47,7 +47,7 @@ function validate_key($k, $mysqli){
     $stmt->execute();
     $result = $stmt->get_result();
     
-    return ($result->num_rows === 1);
+    return ($result->num_rows >= 1); //TODO: Test this function before it goes into production
 }
 
 
